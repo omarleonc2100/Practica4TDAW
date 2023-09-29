@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de la foto</title>
+</head>
+
+<body>
+    <form method="post" action="">
+        <fieldset>
+            <legend>Detalles de la foto</legend>
+            Titulo
+            <textarea name="titulo" id="" cols="70" rows="1"></textarea>
+            <legend>Descripcion</legend>
+            <textarea name="titulo" id="" cols="70" rows="30"></textarea>
+
+            <table>
+                <tr>
+                    <td>
+                        <legend>Continente</legend>
+                        <select name="Continente">
+                            <option value="Africa">Africa</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Europa">Europa</option>
+                            <option value="Norteamerica">Norteamerica</option>
+                            <option value="Sudamerica">Sudamerica</option>
+                            <option value="Oceania">Oceania</option>
+                        </select>
+                    </td>
+                    <td>
+
+                        <legend>Copyright</legend>
+                        <input type="radio" name="opcion" value="Derechosreservados">Todos los derechos reservados
+                        <br />
+                        <input type="radio" name="opcion" value="CreativeCommons">Creative Commons
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <legend>Pais</legend>
+                        <select name="Pais">
+                            <option value="Canada">Canada</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                        </select>
+                    </td>
+                    <td>
+                        <legend>Licencias CreativeCommons</legend>
+                        <input type="checkbox" id="Atribucion" name="Atribucion" />
+                        <label for="Atribucion">Atribucion</label><br />
+                        <input type="checkbox" id="No comercial" name="No comercial" />
+                        <label for="No comercial">No comercial</label><br />
+                        <input type="checkbox" id="No hay trabajos derivativos" name="No hay trabajos derivativos" />
+                        <label for="No hay trabajos derivativos">No hay trabajos derivativos</label><br />
+                        <input type="checkbox" id="Compartir por igual" name="Compartir por igual" />
+                        <label for="Compartir por igual">Compartir por igual</label><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <legend>Ciudad</legend>
+                        <label for="escogerCiudad"></label>
+                        <input list="Ciudad" id="escogerCiudad" name="escogerCiudad" />
+
+                        <datalist id="Ciudad">
+                            <option value="Calgary"></option>
+                            <option value="Montreal"></option>
+                            <option value="Toronto"></option>
+                            <option value="Vancouver"></option>
+                            <option value="Tlaxcala"></option>
+                        </datalist>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            Acepto la licencia de software <input type="checkbox" name="LicenciaSoftware" value="LicenciaSoftware"
+                checked>
+            <br />
+
+            <table>
+                <tr>
+                    <td>
+                        <legend>Califica esta foto:</legend>
+                        <input type="number" name="opcion" value="caliFoto">
+                    </td>
+                    <td>
+
+                        <legend>Fecha</legend>
+                        <input type="date" name="opcion" value="SelecFecha">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <legend>Color</legend>
+                        <input type="color" name="opcion" value="LicenciasTipo">
+
+                    </td>
+                    <td>
+                        <legend>Hora de toma</legend>
+                        <input type="time" name="opcion" value="Derechosreservados">
+                    </td>
+                </tr>
+
+            </table>
+            <br />
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpiar">
+        </fieldset>
+    </form>
+</body>
+
+</html>
